@@ -1,0 +1,16 @@
+basic code for creating a route 
+
+from fastapi import FastAPI
+
+app = FastAPI()
+@app.get("/")
+def root():
+    return {"message" : "Hello world"}
+
+
+to run the code = 
+uvicorn main:app --reload
+
+main is the file name 
+app is the variable we have defined above
+
